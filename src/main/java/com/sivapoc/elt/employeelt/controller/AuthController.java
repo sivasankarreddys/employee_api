@@ -5,14 +5,12 @@ import com.sivapoc.elt.employeelt.dto.RegisterRequest;
 import com.sivapoc.elt.employeelt.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import java.util.Map;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/employee")
 public class AuthController {
 
     @Autowired
